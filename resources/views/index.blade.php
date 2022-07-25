@@ -29,7 +29,7 @@
                 <span class="fs-5">SPN POLDA SULUT</span>
             </a>
             <hr class="mt-3">
-            <ul class="nav nav-pills flex-column mb-auto">
+            <ul class="nav nav-pills flex-column mb-auto link-light">
                 <li class="nav-item">
                     <a class="btn {{ Request::is('home') ? 'text-primary' : '' }}" href="/">
                         <svg class="bi pe-none" width="4" height="20">
