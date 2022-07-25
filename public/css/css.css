@@ -1,0 +1,27 @@
+.body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+.img-fluid{
+    width: 100%;
+    min-height: 20%;
+    background-position: center;
+    background-size: cover;
+
+    
+}
+
+
+.btn {
+    color: white;;
+}
+
+.modal {
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}

@@ -1,0 +1,9 @@
+html {
+    background-image: url("/public/img/3.jpg");
+    background-color: rgb(127, 219, 252);
+}
+
+.row {
+    margin-top: 10%;
+    margin-left: 38%;
+}
