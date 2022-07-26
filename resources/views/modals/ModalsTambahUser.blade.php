@@ -72,7 +72,7 @@
                                 <select class="form-control" id="level" name="level" required>
                                     <option value="" selected disabled>-- LEVEL PENGGUNA --</option>
                                     <option value="ADMIN">ADMIN</option>
-                                    <option value="USER">USER</option>
+                                    <option value="PERSONIL">PERSONIL</option>
                                 </select>
                                 @error('level')
                                     <div class="invalid-feedback">
