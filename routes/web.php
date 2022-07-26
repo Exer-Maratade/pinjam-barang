@@ -43,6 +43,7 @@ Route::post('/pinjamBarang/{id}',[TransaksiController::class, 'store'])->middlew
 Route::get('/permintaan',[TransaksiController::class, 'permintaan'])->middleware('auth')->name('permintaan');
 Route::post('/permintaan/{id}',[TransaksiController::class, 'approve'])->middleware('auth')->name('approve');
 
+
 Route::get('/pengembalian',[TransaksiController::class, 'pengembalian'])->middleware('auth')->name('pengembalian');
 Route::post('/pengembalian/{id}',[TransaksiController::class, 'approvePengembalian'])->middleware('auth')->name('approvePengembalian');
 

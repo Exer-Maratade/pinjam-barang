@@ -3,10 +3,10 @@
 
 @section('container')
 <div class="d-flex justify-content-center mt-2">
-        
         <div class="container text-center mt-4 p-1" style="width: 100%">
-            <div class="container-header shadow-lg container-primary">
+            <div class="container-header container-primary">
                 <h3> SPN POLDA SULUT </h3>
+                <hr>
             </div>
             <div class="container-body mt-5" style="height: 13.8cm ;">
                 {{-- <h5 class="container-title mb-4 text-primary">APLIKASI PINJAM BARANG</h5> --}}

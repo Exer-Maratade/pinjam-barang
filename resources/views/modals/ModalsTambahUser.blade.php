@@ -2,10 +2,10 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">TAMBAH BARANG</h5>
+                <h5 class="modal-title text-dark" id="exampleModalLabel">TAMBAH BARANG</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <main class="tambahUser">
+            <main class="tambahUser text-dark"> 
                 <form action="{{ route('tambahUser') }}" method="post" class="form-tambahUser"
                     enctype="multipart/form-data">
                     @csrf
@@ -67,7 +67,7 @@
                                 @enderror
                             </div>
 
-                            <div class="form-group mt-3">
+                            <div class="form-group mt-4">
                                 <label class="form-control-label" for="level">LEVEL</label>
                                 <select class="form-control" id="level" name="level" required>
                                     <option value="" selected disabled>-- LEVEL PENGGUNA --</option>
@@ -80,7 +80,7 @@
                                     </div>
                                 @enderror
                             </div>
-
+                            <br>
                             <div class="form-floating mb-3">
                                 <input type="text" name="email" class="form-control" id="email"
                                     placeholder="email" value="{{ old('email') }}" required>
@@ -138,13 +138,13 @@
                                 <input type="text" name="pangkat" class="form-control" id="pangkat"
                                     value="{{ $item->pangkat }}">
                             </div>
-                            
+
                             <label class="small" for="jabatan"><strong> jabatan </strong></label>
                             <div class="form mb-3">
                                 <input type="text" name="jabatan" class="form-control" id="jabatan"
                                     value="{{ $item->jabatan }}">
                             </div>
-                            
+
 
                             <label class="small" for="level"><strong> level </strong></label>
                             <div class="form mb-3">

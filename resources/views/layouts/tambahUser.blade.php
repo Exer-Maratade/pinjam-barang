@@ -32,7 +32,7 @@
             <th scope="col">JABATAN</th>
             <th scope="col">LEVEL</th>
             <th scope="col">E-MAIL</th>
-            <th scope="col">ECTION</th>
+            <th scope="col"></th>
             </tr>
         </thead>
         <tbody class="table-body table-light">

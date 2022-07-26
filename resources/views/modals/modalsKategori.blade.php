@@ -1,7 +1,7 @@
 <div class="modal fade" id="inputKategori" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header text-dark">
                 <h5 class="modal-title" id="exampleModalLabel">TAMBAH BARANG</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -9,11 +9,11 @@
                 <form action="/kategori" method="post" class="form-inputKategori" enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
-                        <div class="form-group mt-3">
+                        <div class="form-group mt-4">
                             <label class="form-control-label" for="kat">kategori</label>
                             <select class="form-control" id="kat" name="kat" required>
                                 <option value="" selected disabled>-- KATEGORI --</option>
-                                <option value="ELEKTRONIK">ELEKTTONIK</option>
+                                <option value="ELEKTRONIK">ELEKTRONIK</option>
                                 <option value="YANMA">YANMA</option>
                                 <option value="RANMOR">RANMOR</option>
                             </select>

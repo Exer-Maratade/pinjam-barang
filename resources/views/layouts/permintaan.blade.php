@@ -7,7 +7,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     @endif
-
+ 
     @if (session()->has('update'))
         <div class="alert alert-success alert-dismissible fade show mt-3 mb-4" role="alert">
             {{ session('update') }}
@@ -45,8 +45,7 @@
                             </button>
                         </form>
                     </td>
-
-
+                   
                 </tr>
             @empty
                 <tr>

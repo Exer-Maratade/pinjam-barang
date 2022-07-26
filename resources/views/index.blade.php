@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/css.css">
 
     <link rel="stylesheet" href="fontawesome/css/all.css">
-   
+
 </head>
 
 <body>
@@ -121,35 +121,44 @@
                     <i class="fa-solid fa-user"> </i>
                     {{ auth()->user()->name }}
                 </a>
-                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser">
+                <li>
+                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser">
 
-                    <li><a class="dropdown-item" class="modal" data-bs-toggle="modal"
-                            data-bs-target="#profile">Profile</a></li>
+                        <button type="button" class="btn btn-light text-dark" data-bs-toggle="modal"
+                        data-bs-target="#profile">
+                      Profile
+                    </button>
+                </li>
 
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li>
-                        <form action="Logout" method="post">
-                            @csrf
-                            <button type="submit" class="dropdown-item">
-                                Logout
-                            </button>
-                        </form>
-                    </li>
+                {{-- <li>
+                        <a class="dropdown-item" class="modal" data-bs-toggle="modal"
+                            data-bs-target="#profile">Profile</a>
+                    </li> --}}
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <form action="Logout" method="post">
+                        @csrf
+                        <button type="submit" class="dropdown-item">
+                            Logout
+                        </button>
+                    </form>
+                </li>
                 </ul>
             </div>
         </div>
 
-        
-            <div class="container ml-5">
-                @yield('container')
-            </div>
-        
-        
+
+        <div class="container ml-5">
+            @yield('container')
+        </div>
+
+
 
     </main>
-    
+@include('modals.profileModals')
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
@@ -162,4 +171,5 @@
     <script src="sidebars.js"></script>
 
 </body>
+
 </html>
