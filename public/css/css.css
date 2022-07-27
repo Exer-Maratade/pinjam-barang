@@ -23,6 +23,9 @@
 
 .container {
     color: rgb(0, 0, 0);
-    text-transform: uppercase;
     padding: 2rem;
+}
+
+.table{
+text-transform: uppercase;
 }
