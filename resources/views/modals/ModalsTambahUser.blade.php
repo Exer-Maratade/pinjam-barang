@@ -160,6 +160,12 @@
                                 <input type="text" name="password" class="form-control" id="password"
                                     value="{{ $item->password }}">
                             </div>
+                         
+                            <label class="small" for="email"><strong> email </strong></label>
+                            <div class="form mb-3">
+                                <input type="text" name="email" class="form-control" id="email"
+                                    value="{{ $item->email }}">
+                            </div>
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary"
