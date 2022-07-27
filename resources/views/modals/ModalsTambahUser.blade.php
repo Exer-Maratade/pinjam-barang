@@ -71,8 +71,8 @@
                                 <label class="form-control-label" for="level">LEVEL</label>
                                 <select class="form-control" id="level" name="level" required>
                                     <option value="" selected disabled>-- LEVEL PENGGUNA --</option>
-                                    <option value="ADMIN">ADMIN</option>
-                                    <option value="PERSONIL">PERSONIL</option>
+                                    <option value="admin">admin</option>
+                                    <option value="personil">personil</option>
                                 </select>
                                 @error('level')
                                     <div class="invalid-feedback">
@@ -94,7 +94,7 @@
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                <button type="submit" class="btn btn-primary">Simpang</button>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
                             </div>
                         </div>
                 </form>
@@ -150,8 +150,8 @@
                             <div class="form mb-3">
                                 <select class="form-control" id="level" name="level" required>
                                     <option value="" selected disabled>-- {{ $item->level }} --</option>
-                                    <option value="ADMIN">ADMIN</option>
-                                    <option value="PERSONIL">PERSONIL</option>
+                                    <option value="admin">admin</option>
+                                    <option value="personil">personil</option>
                                 </select>
                             </div>
 
@@ -189,11 +189,11 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <i class="fal fa-exclamation-circle fa-7x"></i>
-                        <h4 class="heading mt-4">Hapus Data!
+                        <h4 class="heading mt-4 text-dark">Hapus Data!
                             <br>
                             {{ $item->name }}
                         </h4>
-                        <p>Anda yakin ingin menghapus data ? <b></b>?</p>
+                        <p class="text text-dark">Anda yakin ingin menghapus data ? <b></b>?</p>
                     </div>
                 </div>
                 <div class="modal-footer">
