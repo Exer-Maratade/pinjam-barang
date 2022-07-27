@@ -41,6 +41,15 @@ class userController extends Controller
         
     }
 
+    public function editUser(Request $request, $id){
+        $item = User::find($id);
+        $item -> update($request->all());
+
+
+        if($request){
+            return redirect('/tambahUser')->with('update', 'data berhasil diedit');
+        }
+    }
 
     public function hapus(Request $request, $id){
         $user = User::find($id);

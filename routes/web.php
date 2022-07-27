@@ -31,6 +31,7 @@ Route::get('/home', function () {
 
 Route::get('/tambahUser',[userController::class, 'index'])->middleware('auth')->name('tambahUser');
 Route::post('/tambahUser',[userController::class, 'store'])->middleware('auth')->name('tambahUser');
+Route::post('/editUser/{id}',[userController::class, 'editUser'])->middleware('auth')->name('editUser');
 Route::post('/hapusUser/{id}',[userController::class, 'hapus'])->middleware('auth')->name('hapusUser');
 
 Route::get('/barang',[BarangController::class, 'index'])->middleware('auth');

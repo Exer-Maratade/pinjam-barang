@@ -118,8 +118,7 @@
                 <a href="#" class="d-flex align-items-center link-light text-decoration-none dropdown-toggle"
                     id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
 
-                    <i class="fa-solid fa-user"> </i>
-                    {{ auth()->user()->name }}
+                    <i class="fa-solid fa-user"></i>{{ auth()->user()->name }}
                 </a>
                 <li>
                     <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser">

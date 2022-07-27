@@ -149,7 +149,7 @@
                             <label class="small" for="level"><strong> level </strong></label>
                             <div class="form mb-3">
                                 <select class="form-control" id="level" name="level" required>
-                                    <option value="" selected disabled>-- {{ $item->level }} --</option>
+                                    <option value="{{ $item->level }}" selected disabled>-- {{ $item->level }} --</option>
                                     <option value="admin">admin</option>
                                     <option value="personil">personil</option>
                                 </select>

@@ -175,7 +175,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <i class="fal fa-exclamation-circle fa-7x"></i>
-                        <h4 class="heading mt-4">Hapus Data! {{ $item->nama_barang }}</h4>
+                        <h4 class="heading mt-4">Hapus Data! <br> {{ $item->nama_barang }}</h4>
                         <p>Anda yakin ingin menghapus data ? <b></b>?</p>
                     </div>
                 </div>
